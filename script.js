@@ -142,9 +142,12 @@ Example: convertTemperature(32, 'F') should return 0 (Celsius).
 Complete the exercise in the space below:
 */
 function convertTemperature (temp, type){
+    if ( type === "C"){
  return ((temp *(9/5)) + 32 + (type = " Celsius"))
-}
 
+}  else ( type === "F")
+    return ((5/9)*(temp-32)) + (type = " Fahrenheit")
+}
 console.log('Exercise 8 Result:', convertTemperature(32, "C"));
 
 /*
